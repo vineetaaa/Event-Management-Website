@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Book Us - Dream Events</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <a class="navbar-brand" href="#"><img class="logo" src="images/logo.png" alt="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutus.html">About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Services
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="wedding.html">Wedding Planning</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="birthday.html">Birthday Planning</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="corporate.html">Corporate Events</a>
+          </div>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        <button class="navbutton" onclick="window.location.href='bookus.html';">Book Us</button> 
+      </span>
+    </div>
+  </nav>
+
+  <!-- Header Image -->
+  <div class="container-fluid" style="margin: 0;padding:0;">
+    <div class="header">
+    <div class="headimage">
+    <img src="images/bookus.jpg" alt="header" style="width: 100%; height: 400px; position: relative; text-align: center;">
+    </div>
+    <div class="heading">
+      <h1 style= "font-size:50px";>Book Us Now</h1>
+  </div>
+    </div>
+</div>
+
+<!-- Form and Map -->
+
+<div class="container-fluid">
+  <div class="formandmap">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <form action="">
+          <div class="form">
+            <div class="contact-form">
+              <div class="title">Contact US Form</div>
+              <div class="input-fields">
+                <div class="items">
+                  <label for="name" class="label">name</label>
+                  <input id="name" type="text" class="input" required>
+                </div>
+                <div class="items">
+                  <label for="email" class="label">email</label>
+                  <input id="email" type="text" class="input" required>
+                </div>
+                <div class="items">
+                  <label for="subject" class="label">phone number</label>
+                  <input id="subject" type="text" class="input" required>
+                </div>
+                <div class="items">
+                  <label for="subject" class="label">event date</label>
+                  <input id="subject" type="date" class="input" required>
+                </div>
+                <div class="items">
+                  <label for="subject" class="label">budget</label>
+                  <input id="subject" type="text" class="input" required>
+                </div>
+                <div class="items">
+                  <label for="msg" class="label">message</label>
+                  <textarea id="msg" class="text-area"></textarea>
+                </div>
+            </div>
+            <div class="wrapper">
+            <button class="formbtn" onclick="myFunction()">submit</button>
+            </div>
+            </div>
+          </div>
+          </form>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.7997878017!2d67.05966501379686!3d24.87068675097534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e8da0e95db7%3A0xeaa9243cffec7853!2sAllama%20Iqbal%20Rd%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1591030071518!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- contact information -->
+<div class="container-fluid" style="margin: 0;padding:0;">
+  <div class="contact">
+  <div class="contact-icons">
+  <div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-4">
+      <i class="far fa-envelope" style="text-align:center; display:block; margin: 0 auto 0px; padding:20px; color:white;font-size: 60px;" ></i>
+      <h2 style="color: white; text-align:center;">Email</h2>
+      <h4 style="color: white; text-align: center;font-weight: 200;">info@dreamevents.com.pk</h4>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4">
+      <i class="fas fa-map-marker-alt" style="text-align:center; display:block; margin: 0 auto 0px; padding:20px; color:white;font-size: 60px;" ></i>
+      <h2 style="color: white; text-align:center; ">Address</h2>
+      <h4 style="color: white; text-align: center; font-weight: 200;">Allama Iqbal Rd, P.E.C.H.S Block 2, Karachi, Pakistan</h4>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4">
+      <i class="fas fa-phone" style="text-align:center; display:block; margin: 0 auto 0px; padding:20px; color:white;font-size: 60px;" ></i>
+      <h2 style="color: white; text-align:center;">Phone</h2>
+      <h4 style="color: white; text-align: center;font-weight: 200;">+92 333 1234567</h4>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+
+<!-- Scroll to top -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+
+
+ <!-- Footer -->
+ <footer>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-6 col-sm-12" style="text-align: center; margin-top: 20px; font-size: 1.1em; font-weight: bold;">
+            <p style="color: #880E4F;">Copyright © Dream Events 2020</p>
+          </div>
+          <div class="col-md-6 col-lg-6 col-sm-12" style="text-align: center; margin-top: 10px; ">
+              <a href="#"><i class="social fa fa-facebook"></i></a>
+              <a href="#"><i class="social fa fa-twitter"></i></a>
+              <a href="#"><i class="social fa fa-instagram"></i></a>
+              <a href="#"><i class="social fa fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+  integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+  crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/bb2f6421e5.js"></script>
+<script>
+  function myFunction() {
+    alert("Your Response has been submitted.  Our Team will reach you soon!");
+  }
+  </script>
+
+<!-- Scroll to top button -->
+<script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+
+</body>
+
+</html>
+
+

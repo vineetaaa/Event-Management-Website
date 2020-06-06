@@ -1,0 +1,615 @@
+body{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.navbar{
+    background: linear-gradient(to right, #4fc3f7 0%, #00897b 100%) !important;
+    
+}
+.logo{
+    height: 100px;
+    width: 180px;
+    
+}
+.nav-link:hover{
+  
+  color: #880E4F !important;
+  border-radius: 35px;
+  text-align: center;
+}
+
+.navbar li.active a{
+  color: #880E4F !important;
+  font-weight: 600 !important;
+}
+/* .navbar li.active a{
+  background-color: #880E4F !important;
+  width: 70px;
+  text-align: center;
+  color: white !important;
+  border-radius: 35px;
+} */
+.nav-item{
+  color: #880E4F !important;
+  font-size: 20px;
+  font-weight: 400 !important;
+  margin-left: 20px;
+}
+.navbutton
+{
+  display: inline-block;
+  border-radius:60px;
+  background-color: #880E4F;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 15px;
+  width: 180px;
+  margin-right: 10px;
+}
+
+.navbutton:hover{
+  color: #880E4F;
+  background-color: white;
+  border: 2px solid #880E4F;
+}
+
+.dropdown-item:hover{
+  background: linear-gradient(to right, #4fc3f7 0%, #00897b 100%)
+}
+
+.carousel-control-prev, .carousel-control-next{
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 100px;
+    height:70px;
+    width: 70px !important;
+    margin: auto;
+}
+.carousel-caption{
+    background-color: rgba(37, 36, 36, 0.753);
+
+}
+.intro-heading{
+    margin-top: 30px;
+    color: #00695C ;
+    text-align: center;
+    text-shadow: 2px 2px 5px #006064;
+}
+.intro-para, .intro-para-cor{
+    color: rgba(49, 49, 49, 0.863);
+    text-align: center;
+    padding: 0 30px 0 30px;
+    font-size: 1.1em;
+}
+.para{
+    color: rgba(49, 49, 49, 0.863);
+    text-align: justify;
+    padding: 10px;
+    font-size: 1em;
+}
+h3{
+    color: #880E4F;
+    text-align: center;
+    margin-top: 20px ;
+}
+.image{
+  box-shadow: 5px 5px 18px rgb(73, 73, 73);
+  
+}
+
+.button {
+    display: inline-block;
+    border-radius:60px;
+    background-color: #29B6F6;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px;
+    width: 180px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  .wrapper {
+    text-align: center;
+}
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+    
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .button:hover{
+    background-color: #00897b !important;
+  }
+  hr{
+      width: 70%;
+      border-top: 1px solid grey;
+      margin-top: 50px;
+  }
+                                              /* Gallery CSS */
+
+  #myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 5px 5px 16px gray;
+  display: block;
+  margin: 0 auto 30px auto;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#gal-caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #gal-caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
+  /*  */
+
+  .social{
+
+    color: white;
+    background-color: #880E4F;
+    width:40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 300px;
+    padding-top: 12px;
+    margin: 2px;
+    display: inline-block !important;
+}
+
+.footer{
+    width: 100%;
+    background: linear-gradient(to right, #4fc3f7 0%, #00897b 100%)
+}
+
+                                        /* About Us CSS */
+.header{
+  position: relative;
+}
+
+.heading {
+  position: absolute; /* Position the background text */
+  bottom:0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 0 0 3px grey;
+  
+  }
+
+  .step{
+  box-shadow: 5px 5px 18px rgb(160, 160, 160);
+  background-color: white;
+  text-align: center;
+  border-radius: 30px;
+  margin-bottom: 20px;
+
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #29B6F6;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 25px;
+  color:white;
+  border: 1px solid white;
+  width: 50%;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #00897b;
+  color: white;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #00897b;
+  color: #FFFFFF;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+                                        /* Book Us CSS */
+
+.contact-form{
+  
+	width: 100%;
+	margin-bottom: 50px;
+	height: auto;
+	background-color: rgba(0,0,0,0.7);
+	padding: 40px 50px;
+  border-radius: 5px;
+}
+.title{
+	font-size: 2em;
+	line-height: 1.25em;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 2px;
+	color: #880E4F;
+  padding-bottom: 15px;
+}
+
+.input-fields {
+  padding: 0 30px;
+}
+
+.input-fields .items{
+width: 100%;
+padding-bottom: 15px;
+} 
+
+.input-fields .items .label{
+display: block;
+  font-size: 1em;
+  color: #ffecb3;
+  text-transform: capitalize;
+  transition: all 0.5s ease;
+  padding-bottom: 5px;
+}
+
+.input-fields .items .input,
+.input-fields .items .text-area{
+background: transparent;
+  border: 0;
+  border: 1px solid #ffecb3;
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 1em;
+  color: #ffecb3;
+  border-radius: 3px;
+}
+
+.formbtn{
+  margin: 0 30px;
+	background: #880E4F;
+	color: #ffecb3;
+	font-size: 1.25em;	
+	padding: 10px 0;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: bold;
+  letter-spacing: 2px;
+  width: 70%;
+}
+
+.form{
+  background-image: url('images/form.jpg');
+  background-repeat: no-repeat;
+}
+
+.contact{
+  background-image: url('images/icons.jpeg');
+  background-repeat: no-repeat;
+  
+}
+.contact-icons{
+  background-color: rgba(0,0,0,0.5);
+  padding-bottom: 20px;
+}
+
+iframe{
+  width: 100%;
+ 
+}
+.map{
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  border: 1px solid black;
+}
+.formandmap{
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+                                            /* Services CSS */
+.serv-para{
+  color: rgba(49, 49, 49, 0.863);
+  text-align: justify;
+  padding: 0 30px 0 30px;
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+.serv-para:hover{
+  box-shadow: 5px 5px 15px #880E4F;
+}
+
+.serv-image{
+  display: block;
+  margin: 0 auto 0 auto;
+  box-shadow: 5px 5px 18px rgb(73, 73, 73);
+  width: 100%;
+  border: 1px solid black;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.card:hover {
+  box-shadow: 15px 18px 20px 0 rgba(79, 153, 147, 0.5);
+}
+
+.card-img {
+  border-radius: 5px 5px 0 0;
+  height: 320px;
+}
+
+.card-content {
+  padding: 2px 16px;
+}
+.intro-para-cor{
+  padding: 40px 40px  0 40px;
+}
+
+table.center {
+  margin: 30px auto 30px auto;
+  border: 2px solid #00695C;
+  box-shadow: 5px 5px 10px #00695C;
+  border-collapse: collapse;
+  width: 80%;
+}
+td{
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #880E4F;
+}
+tr{
+  text-align: center;
+}
+
+                                    /* Corporate Gallery CSS */
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.cor-gallery {
+  position: relative;
+  width: 70%;
+  margin: 60px auto 50px auto;
+}
+
+/* media querry */
+@media screen and (max-width: 600px){
+  .cor-gallery{
+    width: 95%;
+  }
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white !important;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.cor-caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.cor-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.7);;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  width: 50px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
